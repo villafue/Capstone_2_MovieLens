@@ -8,3 +8,11 @@
 6. [Comprehensive/Advanced Recommendation System Tutorial](https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-recommendation-engine-python/)
 7. [Quick Video Tutorial for Correlation](https://www.youtube.com/watch?v=R64Lh1Qwl_0)
 8. [full youtube walkthrough python 2018 20min video](https://www.youtube.com/watch?v=v_mONWiFv0k)
+
+# Math Notation
+
+1. [Basics Math Notation](https://machinelearningmastery.com/basics-mathematical-notation-machine-learning/)
+2. [Greek Symbols Math Wiki](https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering)
+3. [Math Symbols Wiki](https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols)
+4. [Short Intro Reading Math](http://pi.math.cornell.edu/~hubbard/readingmath.pdf)
+5. [Stack Exchange for DS Questions](https://stats.stackexchange.com/)
