@@ -1,2 +1,2 @@
-# Capstone_2_Netflix
+# Capstone_2_MovieLens
 Springboard: Recommendation System
