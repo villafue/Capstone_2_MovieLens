@@ -1,7 +1,7 @@
 Summary
 =======
 
-This dataset (ml-latest-small) describes 5-star rating and free-text tagging activity from [MovieLens](http://movielens.org), a movie recommendation service. It contains 100004 ratings and 1296 tag applications across 9125 movies. These data were created by 671 users between January 09, 1995 and October 16, 2016. This dataset was generated on October 17, 2016.
+This dataset (ml-latest-small) describes 5-star rating and free-text tagging activity from [MovieLens](http://movielens.org), a movie recommendation service. It contains 100836 ratings and 3683 tag applications across 9742 movies. These data were created by 610 users between March 29, 1996 and September 24, 2018. This dataset was generated on September 26, 2018.
 
 Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.
 
@@ -33,7 +33,7 @@ Citation
 
 To acknowledge use of the dataset in publications, please cite the following paper:
 
-> F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4, Article 19 (December 2015), 19 pages. DOI=<http://dx.doi.org/10.1145/2827872>
+> F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. <https://doi.org/10.1145/2827872>
 
 
 Further Information About GroupLens
@@ -58,10 +58,12 @@ Formatting and Encoding
 
 The dataset files are written as [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) files with a single header row. Columns that contain commas (`,`) are escaped using double-quotes (`"`). These files are encoded as UTF-8. If accented characters in movie titles or tag values (e.g. Misérables, Les (1995)) display incorrectly, make sure that any program reading the data, such as a text editor, terminal, or script, is configured for UTF-8.
 
+
 User Ids
 --------
 
 MovieLens users were selected at random for inclusion. Their ids have been anonymized. User ids are consistent between `ratings.csv` and `tags.csv` (i.e., the same id refers to the same user across the two files).
+
 
 Movie Ids
 ---------
@@ -82,6 +84,7 @@ Ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 s
 
 Timestamps represent seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
 
+
 Tags Data File Structure (tags.csv)
 -----------------------------------
 
@@ -94,6 +97,7 @@ The lines within this file are ordered first by userId, then, within user, by mo
 Tags are user-generated metadata about movies. Each tag is typically a single word or short phrase. The meaning, value, and purpose of a particular tag is determined by each user.
 
 Timestamps represent seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
+
 
 Movies Data File Structure (movies.csv)
 ---------------------------------------
@@ -126,6 +130,7 @@ Genres are a pipe-separated list, and are selected from the following:
 * Western
 * (no genres listed)
 
+
 Links Data File Structure (links.csv)
 ---------------------------------------
 
@@ -140,6 +145,7 @@ imdbId is an identifier for movies used by <http://www.imdb.com>. E.g., the movi
 tmdbId is an identifier for movies used by <https://www.themoviedb.org>. E.g., the movie Toy Story has the link <https://www.themoviedb.org/movie/862>.
 
 Use of the resources listed above is subject to the terms of each provider.
+
 
 Cross-Validation
 ----------------
