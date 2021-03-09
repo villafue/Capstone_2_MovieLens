@@ -5,3 +5,4 @@
 3. [5 Open Source Recommender Systems](https://analyticsindiamag.com/5-open-source-recommender-systems-you-should-try-for-your-next-project/)
 4. [SVD](https://analyticsindiamag.com/singular-value-decomposition-svd-application-recommender-system/)
 5. [Kaggle Movielens Notebooks](https://www.kaggle.com/jneupane12/movielens/code?datasetId=3860&sortBy=voteCount)
+6. [https://re-thought.com/pandas-value_counts/](https://re-thought.com/pandas-value_counts/)
