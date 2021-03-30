@@ -15,7 +15,7 @@ The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular
 
 > * [MovieLens Official Datasets](https://grouplens.org/datasets/movielens/)
 
-> * [Project Dataset](https://github.com/villafue/Capstone_2_MovieLens/tree/main/Data)
+> * [Specific Dataset Used for this Project](https://github.com/villafue/Capstone_2_MovieLens/tree/main/Data)
 
 ## 2. Method
 
