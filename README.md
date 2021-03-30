@@ -1,4 +1,5 @@
-![cover_photo](![image](https://user-images.githubusercontent.com/64240700/112944667-fd830780-90e7-11eb-8ab0-61a484b52f70.png)
+(![image](https://user-images.githubusercontent.com/64240700/112944863-489d1a80-90e8-11eb-967e-f48b9f565423.png)
+
 
 
 # Capstone_2_MovieLens
