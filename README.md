@@ -17,11 +17,45 @@ The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular
 
 > * [Dataset used in this Project](https://github.com/villafue/Capstone_2_MovieLens/tree/main/Data)
 
-## 2. Framework
+## 2. Evaluation Metrics
 
 [[Framework Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/4_Framework.ipynb).
 
-Built Recommenders using Frank's core framework of five modules. His scripts quickly automated the raw data, pre-processed them for modeling, and made it easy to quickly build, tune, and evaluate the different algorithms. 
+1. There are eight quantitative metrics used to evaluate each recommender system: Two for accuracy, three that are user-focused, and three that evaluate the over-all system itself:
+
+```
+Legend:
+
+RMSE:      Root Mean Squared Error. Lower values mean better accuracy.
+MAE:       Mean Absolute Error. Lower values mean better accuracy.
+HR:        Hit Rate; how often we are able to recommend a left-out rating. Higher is better.
+cHR:       Cumulative Hit Rate; hit rate, confined to ratings above a certain threshold. Higher is better.
+ARHR:      Average Reciprocal Hit Rank - Hit rate that takes the ranking into account. Higher is better.
+Coverage:  Ratio of users for whom recommendations above a certain threshold exist. Higher is better.
+Diversity: 1-S, where S is the average similarity score between every possible pair of recommendations
+           for a given user. Higher means more diverse.
+Novelty:   Average popularity rank of recommended items. Higher means more novel.
+```
+
+2. There is also one qualitative metric used to round out the evaluation of a model, and it prints out the top-10 movie recommendations for a specified user: 
+
+```
+Using recommender  Hybrid - 9.4.07
+
+We recommend:
+Usual Suspects, The (1995) 5
+Pulp Fiction (1994) 5
+Star Wars: Episode V - The Empire Strikes Back (1980) 5
+Princess Bride, The (1987) 5
+Fight Club (1999) 5
+Shawshank Redemption, The (1994) 5
+Departed, The (2006) 5
+Philadelphia Story, The (1940) 5
+Life Is Beautiful (La Vita Ã¨ bella) (1997) 5
+In the Mood For Love (Fa yeung nin wa) (2000) 5
+```
+
+I chose "User 25" and more information can be found in the [[EDA Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/3_Exploratory_Data_Analysis.ipynb).
 
 ## 3. Method
 
@@ -47,17 +81,17 @@ There are the types of recommenders used in this project:
 
 > * [Hybrid Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/9_Hybrid.ipynb#hybrid)
 
-## 3. Data Preparation 
+## 4. EDA
 
-[[Data Preparation Section]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#data_preparation)
+[[Full EDA Notebook]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#data_preparation)
 
 In a regression problem, the task is to predict the dependent variable given a set of independent features. The goal is measure how closely the predictions match the actual values. To prepare my data, I had to put both train and test sets together, remove outliers, and impute the missing values. 
 
 ## 4. EDA
 
-[[EDA Section]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#exploratory_data_analysis)
+[[EDA Section]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/3_Exploratory_Data_Analysis.ipynb)
 
-* I went through each of the 80 features and analyzed their pattern against the price of the homes.
+* As part of his framework, Frank also prints out the top 10 recommendations, for a specific user, for each of his recommendation systems. I chose User 25 as he/she has similar movie tastes to my own. This adds a qualitative dimension on top of the other metrics used to judge the models. Below is a list of User 25's top rated movies:
 
 ![](https://raw.githubusercontent.com/villafue/Capstone_1-_Predict_House_Prices/master/Pictures/EDA_BsmtQual.png)
 
