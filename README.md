@@ -1,4 +1,4 @@
-![banner](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/e2fd020d31da5b9e99942b4404610e491293e66b/Pictures/README/WHAT%20SHOULD%20THEY%20WATCH%20NEXT_%20DS.svg)
+![banner](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/7aa6f7dfc758b781b43f2822c67bd9139d5e95f9/Pictures/README/KNOW%20WHAT%20THEY%20LIKE%20BB.svg)
 # Recommending the Next Movie to Watch
 
 
