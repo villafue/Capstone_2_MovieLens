@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/64240700/112944863-489d1a80-90e8-11eb-967e-f48b9f565423.png)
+![image](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/f25a222a027c0b07ebd42e5c82394b5111b9c765/Pictures/README/WHAT%20SHOULD%20YOU%20WATCH%20NEXT.svg)
 
 
 
