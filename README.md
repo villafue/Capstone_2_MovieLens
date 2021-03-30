@@ -21,7 +21,7 @@ The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular
 
 [[Framework Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/4_Framework.ipynb)
 
-1. There are eight quantitative metrics used to evaluate each recommender system: Two for accuracy, three that are user-focused, and three that evaluate the over-all system itself:
+There are eight quantitative metrics used to evaluate each recommender system: Two for accuracy, three that are user-focused, and three that evaluate the over-all system itself:
 
 ```
 Legend:
@@ -37,7 +37,7 @@ Diversity: 1-S, where S is the average similarity score between every possible p
 Novelty:   Average popularity rank of recommended items. Higher means more novel.
 ```
 
-2. There is also one qualitative metric used to round out the evaluation of a model, and it prints out the top-10 movie recommendations for a specified user: 
+There is also one qualitative metric used to round out the evaluation of a model, and it prints out the top-10 movie recommendations for a specified user: 
 
 ```
 Using recommender  ContentKNN
@@ -59,7 +59,7 @@ I chose "User 25" and more information can be found in the [[EDA Notebook]](http
 
 ## 3. Models
 
-There are the types of recommenders used in this project:
+These are the types of recommenders used in this project:
 
 1. **Content-based Recommenders:** Content-based systems recommends items based on the attributes of those items themselves, instead of trying to use aggregate user behavior data.
 
@@ -83,7 +83,7 @@ The Notebooks for each method can be found here:
 
 [[Conclusion Section]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/MovieLens.ipynb#conclusion)
 
-1. The following is a table of the best recommenders from each section:
+The following is a table of the best recommenders from each section, ordered by RMSE:
 
 ```
 Algorithm         RMSE       MAE        HR         cHR        ARHR       Coverage   Diversity  Novelty   
@@ -94,7 +94,7 @@ SVD - Tuned       0.8665     0.6626     0.0262     0.0262     0.0076     0.9672 
 Hybrid - 9.4.07   0.8577     0.6594     0.0328     0.0328     0.0137     0.9295     0.1716     1372.1110
 ```
 
-2. Out of all the models in my project, if I had to choose one, it would be:
+Out of all the models in my project, if I had to choose one, it would be:
 
 ```
 Algorithm         RMSE       MAE        HR         cHR        ARHR       Coverage   Diversity  Novelty 
@@ -117,9 +117,9 @@ Life Is Beautiful (La Vita Ã¨ bella) (1997) 5
 In the Mood For Love (Fa yeung nin wa) (2000) 5
 ```
 
-I chose it because it had the best accuracy (lowest RMSE/MAE), the highest hit rates, and a decent Novelty score. Furthermore, its top-10 recommendations were something I would be proud to recommend for A/B testing.
+I chose it because it had the best accuracy (lowest RMSE/MAE), the highest hit rates, and a decent Novelty score. Furthermore, its top-10 recommendations were something I would be proud to recommend for online A/B testing.
 
-3. However, in the real-world, there is not just one "Top-N" list of recommendations but multiple on an app or website. In [Section 11.1](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/MovieLens.ipynb#afterward), I recommend different algorithms for specific use-cases. More information can be found in the [[Project Report]](https://github.com/villafue/Capstone_2_MovieLens/blob/main/Final/MovieLens%20Capstone%202%20Project%20Report.pdf).  
+However, in the real-world, there is not just one "Top-N" list of recommendations but multiple on an app or website. In [[Section 11.1]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/MovieLens.ipynb#afterward), I recommend a different algorithm for each specific use-case. More information can be found in the [[Project Report]](https://github.com/villafue/Capstone_2_MovieLens/blob/main/Final/MovieLens%20Capstone%202%20Project%20Report.pdf).  
 
 ## 5. Future Improvements
 
@@ -139,8 +139,6 @@ This project would not have come to pass without the help or knowledge from the 
 
 1.   Kenneth Gil-Pasquel, my Springboard Data Science Advisor, was essential in the quality and timely completion of this project.  
 2.   [Frank Kane](https://www.linkedin.com/in/fkane/?trk=lil_course) and his [Building Recommender Systems with Machine Learning and AI](https://sundog-education.com/course/building-recommender-systems-with-machine-learning-and-ai/) is the framework my recommender systems were built upon. Furthermore, I loved how he explained recommendation systems from a practical and business standpoint, rather than just a scientific one (i.e. just trying to achieve the lowest RMSE possible).
-3. Tamas Bakos and his [Movie Recommendation Algorithm](https://www.kaggle.com/bakostamas/movie-recommendation-algorithm) notebook on Kaggle. It helped while I was doing my EDA.
-4. Jagannath Neupane and his [Analysis of MovieLens Dataset (Beginner's Analysis)](https://www.kaggle.com/jneupane12/analysis-of-movielens-dataset-beginner-sanalysis) notebook on Kaggle. His EDA was very helpful and I used his code to create the WordCount visual.
 
 
 
