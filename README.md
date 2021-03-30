@@ -17,9 +17,25 @@ The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular
 
 > * [Dataset used in this Project](https://github.com/villafue/Capstone_2_MovieLens/tree/main/Data)
 
-## 2. Method
+## 2. Framework
 
-This is a supervised machine learning problem and predictions will be made using regression analysis. 
+[[Framework Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/4_Framework.ipynb).
+
+Built Recommenders using Frank's core framework of five modules. His scripts quickly automated the raw data, pre-processed them for modeling, and made it easy to quickly build, tune, and evaluate the different algorithms. 
+
+## 3. Method
+
+There are the types of recommenders used in this project:
+
+1. **Content-based Recommender:** Content-based systems recommends items based on the attributes of those items themselves, instead of trying to use aggregate user behavior data.
+
+2. **Collaborative-based Recommender:** Collaborative Based Recommenders leverages the behavior or others to inform what a user might enjoy. At a very high level, it means finding other people like him/her and recommending stuff they liked. Or it might mean finding other things similar to the things that he/she likes. Either way, the idea is taking cues from people similar to a specified user and recommending stuff based on the things they like that this user has not seen yet. It's recommending stuff based on other people's collaborative behavior.
+
+3. **Matrix Factorization Methods:** Instead of trying to find items or users that are similar to each other, data science and machine learning techniques are applied to extract predictions from the ratings data. The approach is to train models with user-ratings data, and use those models to predict the ratings of new movies by the users.
+
+4. **Deep Learning:** Deep learning opens up entirely new approaches to making recommendations that are worth exploring, and allows users to take advantage of all the rapid advances in the field of artificial intelligence.
+
+3. **Hybrid Recommenders:** In the real world, there’s no need to choose a single algorithm for your recommender system. Each algorithm has its own strengths and weaknesses and combining many algorithms together could make the sum better than its parts.
 
 ## 3. Data Preparation 
 
