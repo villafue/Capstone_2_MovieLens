@@ -19,7 +19,7 @@ The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular
 
 ## 2. Evaluation Metrics
 
-[[Framework Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/4_Framework.ipynb).
+[[Framework Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/4_Framework.ipynb)
 
 1. There are eight quantitative metrics used to evaluate each recommender system: Two for accuracy, three that are user-focused, and three that evaluate the over-all system itself:
 
@@ -40,24 +40,24 @@ Novelty:   Average popularity rank of recommended items. Higher means more novel
 2. There is also one qualitative metric used to round out the evaluation of a model, and it prints out the top-10 movie recommendations for a specified user: 
 
 ```
-Using recommender  Hybrid - 9.4.07
+Using recommender  ContentKNN
 
 We recommend:
-Usual Suspects, The (1995) 5
-Pulp Fiction (1994) 5
-Star Wars: Episode V - The Empire Strikes Back (1980) 5
-Princess Bride, The (1987) 5
-Fight Club (1999) 5
-Shawshank Redemption, The (1994) 5
-Departed, The (2006) 5
-Philadelphia Story, The (1940) 5
-Life Is Beautiful (La Vita Ã¨ bella) (1997) 5
-In the Mood For Love (Fa yeung nin wa) (2000) 5
+Ant-Man and the Wasp (2018) 4.7450497998793395
+The Darkest Minds (2018) 4.7450497998793395
+Annihilation (2018) 4.7450497998793395
+Game Night (2018) 4.7450497998793395
+Tomb Raider (2018) 4.7450497998793395
+Alpha (2018) 4.7450497998793395
+Solo: A Star Wars Story (2018) 4.7450497998793395
+Fred Armisen: Standup for Drummers (2018) 4.7450497998793395
+Tom Segura: Disgraceful (2018) 4.7450497998793395
+When We First Met (2018) 4.7450497998793395
 ```
 
 I chose "User 25" and more information can be found in the [[EDA Notebook]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/3_Exploratory_Data_Analysis.ipynb).
 
-## 3. Method
+## 3. Models
 
 There are the types of recommenders used in this project:
 
@@ -79,66 +79,68 @@ The Notebooks for each method can be found here:
 > * [Deep Learning Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/8_Deep_Learning.ipynb#deep_learning)
 > * [Hybrid Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/9_Hybrid.ipynb#hybrid)
 
-## 4. EDA
+## 4. Conclusion
 
-[[Full EDA Notebook]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#data_preparation)
+[[Conclusion Section]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/MovieLens.ipynb#conclusion)
 
-In a regression problem, the task is to predict the dependent variable given a set of independent features. The goal is measure how closely the predictions match the actual values. To prepare my data, I had to put both train and test sets together, remove outliers, and impute the missing values. 
+1. The following is a table of the best recommenders from each section:
 
-## 4. EDA
+```
+Algorithm         RMSE       MAE        HR         cHR        ARHR       Coverage   Diversity  Novelty   
+RBM - Tuned       1.2797     1.0856     0.0230     0.0230     0.0089     0.0000     0.0574     965.0569
+ContentKNN        0.9336     0.7224     0.0049     0.0049     0.0012     0.5492     0.3442     2981.5376
+Item KNNZBaseline 0.8931     0.6866     0.0246     0.0246     0.0094     0.9525     0.5054     4512.4656
+SVD - Tuned       0.8665     0.6626     0.0262     0.0262     0.0076     0.9672     0.2945     2030.2127
+Hybrid - 9.4.07   0.8577     0.6594     0.0328     0.0328     0.0137     0.9295     0.1716     1372.1110
+```
 
-[[EDA Section]](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/3_Exploratory_Data_Analysis.ipynb)
+2. Out of all the models in my project, if I had to choose one, it would be:
 
-* As part of his framework, Frank also prints out the top 10 recommendations, for a specific user, for each of his recommendation systems. I chose User 25 as he/she has similar movie tastes to my own. This adds a qualitative dimension on top of the other metrics used to judge the models. Below is a list of User 25's top rated movies:
+```
+Algorithm         RMSE       MAE        HR         cHR        ARHR       Coverage   Diversity  Novelty 
+Hybrid - 9.4.07   0.8577     0.6594     0.0328     0.0328     0.0137     0.9295     0.1716     1372.1110
 
-![](https://raw.githubusercontent.com/villafue/Capstone_1-_Predict_House_Prices/master/Pictures/EDA_BsmtQual.png)
+-----
 
-## 5. Pre-Processing
+Using recommender  Hybrid - 9.4.07
 
-[[Pre-Processing]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#target_variable)
+We recommend:
+Usual Suspects, The (1995) 5
+Pulp Fiction (1994) 5
+Star Wars: Episode V - The Empire Strikes Back (1980) 5
+Princess Bride, The (1987) 5
+Fight Club (1999) 5
+Shawshank Redemption, The (1994) 5
+Departed, The (2006) 5
+Philadelphia Story, The (1940) 5
+Life Is Beautiful (La Vita Ã¨ bella) (1997) 5
+In the Mood For Love (Fa yeung nin wa) (2000) 5
+```
 
-* I transformed the dependent variable into something that resembles a more normal distribution, as well as corrected skewness for the indendent features. By transforming the features, it helped in prediction especially for the linear-based models. 
+I chose it because it had the best accuracy (lowest RMSE/MAE), the highest hit rates, and a decent Novelty score. Furthermore, its top-10 recommendations were something I would be proud to recommend for A/B testing.
 
-![](https://raw.githubusercontent.com/villafue/Capstone_1-_Predict_House_Prices/master/Pictures/SalePrice%20Transformed.png)
+3. However, in the real-world, there is not just one "Top-N" list of recommendations but multiple on an app or website. In [Section 11.1](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/MovieLens.ipynb#afterward), I recommend different algorithms for specific use-cases. More information can be found in the [[Project Report]](https://github.com/villafue/Capstone_2_MovieLens/blob/main/Final/MovieLens%20Capstone%202%20Project%20Report.pdf).  
 
-## 6. Modeling
+## 5. Future Improvements
 
-[[Modeling Section]](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#modeling)
+[[Project Report]](https://github.com/villafue/Capstone_2_MovieLens/blob/main/Final/MovieLens%20Capstone%202%20Project%20Report.pdf)
 
-I chose to use Python's [scikit-learn library](https://scikit-learn.org/stable/) for my regression problem. I prediced the price of homes using a mixture of linear-based and tree-based algorithms against a baseline model. Once the models were optimized to my data, I then used them as input for my meta-stacking algorithm.
+* Frank said one of the biggest issues was data sparsity, and admitted that 100k ratings is not enough information. Because of this, some models did not perform as well or as optimal as possible. One avenue I would like to take is to use the full 27 million rating dataset from [GroupLens.org](https://grouplens.org/datasets/movielens/)
 
-![](https://raw.githubusercontent.com/villafue/Capstone_1-_Predict_House_Prices/master/Pictures/Final%20Table.png)
+* Exploring the full 27 million dataset would probably require me to use a platform like Apache Spark to spread all the data among clusters. Using this platform would be a worthy endeavor in and of itself.
 
->***NOTE:** I choose RMSE as the accuracy metric over mean absolute error(MAE) because the errors are squared before they are averaged which gives the RMSE a higher weight to large errors. Thus, the RMSE is useful when large errors are undesirable. The smaller the RMSE, the more accurate the prediction because the RMSE takes the square root of the residual errors of the line of best fit. Furthermore, it is also the chosen metric for how my predictions were to be scored.*
-
-**WINNER: [Stacking Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingRegressor.html)**
-
-This algorithm inputs models as base predictors, and by default, uses a version of the [Ridge](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html#sklearn.linear_model.RidgeCV) algorithm as the final predictor. The optimized version used both my models and the original training set as input for prediction.  
-
-## 7. Predictions
-
-[[Project Report]](https://github.com/villafue/Capstone_1-_Predict_House_Prices/blob/master/Final/Capstone%201%20Final%20Report%203Feb21.pdf)
-
-Upon submission, I had a final RMSE score of 0.12676 which means that, on average, my predicted house prices were $0.13 off for every $1.00. I also included three business recommendations, for the AREC CEO, on how to prepare her company to use this data.
-
->***NOTE:** The recommendations are under the "Recommendations" section in the "Report" link above.*
-
-## 8. Future Improvements
-
-[[Project Report]](https://github.com/villafue/Capstone_1-_Predict_House_Prices/blob/master/Final/Capstone%201%20Final%20Report%203Feb21.pdf)
-
-* Compare Time Series Analysis with inflation data. There seemed to be a positive correlation of the price of homes against the year it was built. However, the data was not adjusted for inflation so that is something for further exploration.
-
-* Experiment with Bayesian Hyperparameter Tuning. GridSearch is computationally expensive and RandomSearch is a game of chance. Bayesian Optimization is essentially a “smart” RandomSearch that can identify areas that can improve the predictive accuracy.   
-
-* Auto Modeling and Tuning. In [Section 6.4](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#TPOT), I showed my attempt at using the [TPOT](http://epistasislab.github.io/tpot/) automated machine learning tool. The meta-model it chose was very convoluted and had its own API. I would like to explore this more and see how well it ultimately scores.
+* Other areas of improvement stems from technical issues. I could only use RandomizedSearchCV with one of my algorithms. With the exception of SVD, I'm not confident in my hyperparameter tuning as it took all day to run and I could only use GridSearchCV. Also, Frank admitted the Hybrid algorithm was rather simple. I had to input the weights of each algorithm and that was how my Hybrid recommender was created. I would like to one day partner with a programmer or do it myself where the weights are learned for each Hybrid model.
 
 >***NOTE:** For the full list of future improvements, please go to the "Areas for Further Exploration" section in the "Report" link above.*
 
-## 9. Credits
+## 6. Credits
 
-This project was a huge labor of love and could not have been accomplished without help and guidance. First, Thanks to Pedro, Serigne, Bsivavenu, Jesuscristo, Pavan, and Arun for their amazing notebooks! I drew a lot of inferences, strategies, and insights from them. Links to their work can be seen under the [6.3 - References](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#references) of my notebook. Also, thank you to Kenneth Gil Pascual for his mentoring and guidance has been absolutely invaluable to the quality and completion of this project.
+This project would not have come to pass without the help or knowledge from the following people:
 
+1.   Kenneth Gil-Pasquel, my Springboard Data Science Advisor, was essential in the quality and timely completion of this project.  
+2.   [Frank Kane](https://www.linkedin.com/in/fkane/?trk=lil_course) and his [Building Recommender Systems with Machine Learning and AI](https://sundog-education.com/course/building-recommender-systems-with-machine-learning-and-ai/) is the framework my recommender systems were built upon. Furthermore, I loved how he explained recommendation systems from a practical and business standpoint, rather than just a scientific one (i.e. just trying to achieve the lowest RMSE possible).
+3. Tamas Bakos and his [Movie Recommendation Algorithm](https://www.kaggle.com/bakostamas/movie-recommendation-algorithm) notebook on Kaggle. It helped while I was doing my EDA.
+4. Jagannath Neupane and his [Analysis of MovieLens Dataset (Beginner's Analysis)](https://www.kaggle.com/jneupane12/analysis-of-movielens-dataset-beginner-sanalysis) notebook on Kaggle. His EDA was very helpful and I used his code to create the WordCount visual.
 
 
 
