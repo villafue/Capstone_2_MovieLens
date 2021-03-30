@@ -63,22 +63,20 @@ There are the types of recommenders used in this project:
 
 1. **Content-based Recommenders:** Content-based systems recommends items based on the attributes of those items themselves, instead of trying to use aggregate user behavior data.
 
-> * [Content-based Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/5_Content_Based_Recommenders.ipynb)
-
 2. **Collaborative-based Recommender:** Collaborative Based Recommenders leverages the behavior or others to inform what a user might enjoy. At a very high level, it means finding other people like him/her and recommending stuff they liked. Or it might mean finding other things similar to the things that he/she likes. Either way, the idea is taking cues from people similar to a specified user and recommending stuff based on the things they like that this user has not seen yet. It's recommending stuff based on other people's collaborative behavior.
-
-> * [Collaborative-based Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/6_Collaborative_Based_Recommenders.ipynb#collaborative)
 
 3. **Matrix Factorization Methods:** Instead of trying to find items or users that are similar to each other, data science and machine learning techniques are applied to extract predictions from the ratings data. The approach is to train models with user-ratings data, and use those models to predict the ratings of new movies by the users.
 
-> * [Matrix Factorizatioin Methods Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/7_Matrix_Factorization_Methods.ipynb#matrix)
-
 4. **Deep Learning:** Deep learning opens up entirely new approaches to making recommendations that are worth exploring, and allows users to take advantage of all the rapid advances in the field of artificial intelligence.
-
-> * [Deep Learning Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/8_Deep_Learning.ipynb#deep_learning)
 
 5. **Hybrid Recommenders:** In the real world, there’s no need to choose a single algorithm for your recommender system. Each algorithm has its own strengths and weaknesses and combining many algorithms together could make the sum better than its parts.
 
+The Notebooks for each method can be found here:
+
+> * [Content-based Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/5_Content_Based_Recommenders.ipynb)
+> * [Collaborative-based Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/6_Collaborative_Based_Recommenders.ipynb#collaborative)
+> * [Matrix Factorizatioin Methods Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/7_Matrix_Factorization_Methods.ipynb#matrix)
+> * [Deep Learning Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/8_Deep_Learning.ipynb#deep_learning)
 > * [Hybrid Recommenders Notebook](https://colab.research.google.com/github/villafue/Capstone_2_MovieLens/blob/main/Notebook/9_Hybrid.ipynb#hybrid)
 
 ## 4. EDA
