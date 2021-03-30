@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/785b12a60f4f0f1dd730316df349ff5fa3894a32/Pictures/README/WHAT%20SHOULD%20YOU%20WATCH%20NEXT_.svg)
+![banner](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/d096e4efbde0a3f2ea90b532b5ebbfd85cadc2b0/Pictures/README/WHAT%20SHOULD%20YOU%20WATCH%20NEXT%20(1).svg)
 
 
 
