@@ -9,13 +9,13 @@
 
 ## 1. Data
 
-The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular in the recommender community. It was created in 1997 by [GroupLens Research](https://grouplens.org/), and the specific dataset I used has about 100,000 ratings for 9,000 movies by 600 users. For more information, please click the links below:
+The [MovieLens](https://en.wikipedia.org/wiki/MovieLens) dataset is very popular in the recommender community. It was created in 1997 by [GroupLens Research](https://grouplens.org/), and the specific dataset used for this project has about 100,000 ratings for 9,000 movies by 600 users. For more information, please click the links below:
 
-> * [Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project by Dean De Cock](http://jse.amstat.org/v19n3/decock.pdf)
+> * [MovieLens Website](https://movielens.org/)
 
-> * [Kaggle Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview)
+> * [MovieLens Official Datasets](https://grouplens.org/datasets/movielens/)
 
-> * [Data Import Section](https://colab.research.google.com/github/villafue/Capstone_1-_Predict_House_Prices/blob/master/House_Price.ipynb#import_packages)
+> * [Project Dataset](https://github.com/villafue/Capstone_2_MovieLens/tree/main/Data)
 
 ## 2. Method
 
