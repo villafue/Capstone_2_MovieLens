@@ -1,4 +1,5 @@
-![cover_photo](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/main/Pictures/README/Untitled%20design.png)
+![cover_photo](![image](https://user-images.githubusercontent.com/64240700/112944667-fd830780-90e7-11eb-8ab0-61a484b52f70.png)
+https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/main/Pictures/README/Untitled%20design.png)
 
 # Capstone_2_MovieLens
 Springboard: Recommendation System
