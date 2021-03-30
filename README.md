@@ -1,5 +1,6 @@
 ![banner](https://raw.githubusercontent.com/villafue/Capstone_2_MovieLens/7aa6f7dfc758b781b43f2822c67bd9139d5e95f9/Pictures/README/KNOW%20WHAT%20THEY%20LIKE%20BB.svg)
-# Recommending the Next Movie to Watch
+# Building Recommender Systems with Machine Learning and AI
+
 
 
 # Capstone_2_MovieLens
